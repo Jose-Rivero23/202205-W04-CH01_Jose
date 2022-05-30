@@ -1,26 +1,21 @@
+import { Controls } from "../controls/controls";
+import { Gentleman } from "../gentleman/gentleman";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png"
-          className="App-logo"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="main-header">
+        <h1 class="main-title">The pointing gentlemen</h1>
       </header>
+      <Controls></Controls>
+      <main className="main">
+        <ul className="gentlemen">
+          <Gentleman></Gentleman>
+          <Gentleman></Gentleman>
+          <Gentleman></Gentleman>
+        </ul>
+      </main>
     </div>
   );
 }
