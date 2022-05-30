@@ -11,9 +11,7 @@ function App() {
             </header>
             <Controls></Controls>
             <main className="main">
-                <ul className="gentlemen">
-                    <Gentleman></Gentleman>
-                </ul>
+                <Gentleman></Gentleman>
             </main>
         </div>
     );
